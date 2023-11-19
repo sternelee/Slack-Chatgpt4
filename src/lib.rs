@@ -30,7 +30,7 @@ pub async fn run() {
 async fn handler(sm: SlackMessage, workspace: &str, channel: &str) {
     let chat_id = workspace.to_string() + channel;
     let co = ChatOptions {
-        model: ChatModel::GPT4_32K,
+        model: ChatModel::GPT4,
         restart: false,
         system_prompt: None,
     };
